@@ -33,21 +33,21 @@ html {
     --cor-borda-black-white: #545963;
     --cor-hover-black-white: #302029;
     --cor-hover-borda-black-white: #ff687e;
-    --image-black-white: url(../imagens/sol.png);
-    --image-hover-black-white: url(../imagens/sol-hover.png);
+    --image-black-white: url(imagens/sol.png);
+    --image-hover-black-white: url(imagens/sol-hover.png);
 
     --cor-svg-inicio: #ffffff;
 
     --cor-hover-curriculo: #1c1818;
     --borda-curriculo: #333;
     --borda-hover-curriculo: #eee;
-    --image-internet-pt: url(../icones/internet-branco.svg);
-    --image-seta-pt: url(../icones/seta-baixo-branco.svg);
-    --image-download-curriculo: url(../icones/curriculo-branco.svg);
+    --image-internet-pt: url(icones/internet-branco.svg);
+    --image-seta-pt: url(icones/seta-baixo-branco.svg);
+    --image-download-curriculo: url(icones/curriculo-branco.svg);
 
-    --imagem-detalhe-card-cima: url(../icones/detalhe-cima-card-cinza.svg);
+    --imagem-detalhe-card-cima: url(icones/detalhe-cima-card-cinza.svg);
 
-    --Git-Hub: url(../imagens/GH-imagem-branco.png);
+    --Git-Hub: url(imagens/GH-imagem-branco.png);
 }
 
 .white {
@@ -74,21 +74,21 @@ html {
     --cor-borda-black-white: #8390a5;
     --cor-hover-black-white: #f5dce4;
     --cor-hover-borda-black-white: #ad1635;
-    --image-black-white: url(../imagens/lua.png);
-    --image-hover-black-white: url(../imagens/lua-hover.png);
+    --image-black-white: url(imagens/lua.png);
+    --image-hover-black-white: url(imagens/lua-hover.png);
     
     --cor-svg-inicio: #393939;
 
     --cor-hover-curriculo: #f5dce4;
     --borda-curriculo: #8792a4;
     --borda-hover-curriculo: #ad1635;
-    --image-internet-pt: url(../icones/internet-cinza.svg);
-    --image-seta-pt: url(../icones/seta-baixo-cinza.svg);
-    --image-download-curriculo: url(../icones/curriculo-cinza.svg);
+    --image-internet-pt: url(icones/internet-cinza.svg);
+    --image-seta-pt: url(icones/seta-baixo-cinza.svg);
+    --image-download-curriculo: url(icones/curriculo-cinza.svg);
 
-    --imagem-detalhe-card-cima: url(../icones/detalhe-cima-card-branco.svg);
+    --imagem-detalhe-card-cima: url(icones/detalhe-cima-card-branco.svg);
 
-    --Git-Hub: url(../imagens/GH-imagem-preto.png);
+    --Git-Hub: url(imagens/GH-imagem-preto.png);
 }
 
 body{
@@ -301,7 +301,7 @@ header{
 #logo{
     width: 110px;
     aspect-ratio: 1 / 1;
-    background-image: url(../imagens/logo.png);
+    background-image: url(imagens/logo.png);
     background-position: center;
     background-size: contain;
     opacity: 0.85;
@@ -1011,7 +1011,7 @@ section{
             width: 10%;
             height: 35%;
 
-            background-image: url(../icones/perfil-esquerda.svg);
+            background-image: url(icones/perfil-esquerda.svg);
             top: 50%;
             left: 2%;
         }
@@ -1020,7 +1020,7 @@ section{
             width: 10%;
             height: 35%;
 
-            background-image: url(../icones/perfil-direita.svg);
+            background-image: url(icones/perfil-direita.svg);
             top: 50%;
             left: 98%;
         }
@@ -1029,7 +1029,7 @@ section{
             width: 45%;
             height: 5%;
 
-            background-image: url(../icones/perfil-topo.svg);
+            background-image: url(icones/perfil-topo.svg);
             top: 4%;
             left: 65%;
         }
@@ -1071,7 +1071,7 @@ section{
                 width: 100%;
                 height: 100%;
 
-                background-image: url(../imagens/thragg.jpg);
+                background-image: url(imagens/thragg.jpg);
                 background-size: cover;
 
                 --corte: 24px;
@@ -1170,7 +1170,7 @@ section{
         #code-imagem{
             width: 20px;
             height: 20px;
-            background-image: url(../imagens/code-vermelho.png);
+            background-image: url(imagens/code-vermelho.png);
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -1315,7 +1315,7 @@ section{
                         #imagem-localizacao{
                             width: 40px;
                             aspect-ratio: 1/1;
-                            background-image: url(../imagens/local-imagem.png);
+                            background-image: url(imagens/local-imagem.png);
                             background-position: center;
                             background-size: contain;
                             background-repeat: no-repeat;
@@ -1324,7 +1324,7 @@ section{
                         #imagem-foco{
                             width: 40px;
                             aspect-ratio: 1/1;
-                            background-image: url(../imagens/foco-imagem.png);
+                            background-image: url(imagens/foco-imagem.png);
                             background-position: center;
                             background-size: contain;
                             background-repeat: no-repeat;
@@ -1413,7 +1413,7 @@ section{
                             #imagem-baixar{
                                 width: 30px;
                                 aspect-ratio: 1/1;
-                                background-image: url(../imagens/download-pdf.png);
+                                background-image: url(imagens/download-pdf.png);
                                 background-position: center;
                                 background-size: cover;
                             }
@@ -2129,27 +2129,27 @@ section{
 }
 
 .C-imagem{
-    background-image: url(../imagens/C-imagem.png);
+    background-image: url(imagens/C-imagem.png);
 }
 
 .Py-imagem{
-    background-image: url(../imagens/Py-imagem.png);
+    background-image: url(imagens/Py-imagem.png);
 }
 
 .JS-imagem{
-    background-image: url(../imagens/JS-imagem.png);
+    background-image: url(imagens/JS-imagem.png);
 }
 
 .HTML-imagem{
-    background-image: url(../imagens/HTML-imagem.png);
+    background-image: url(imagens/HTML-imagem.png);
 }
 
 .CSS-imagem{
-    background-image: url(../imagens/CSS-imagem.png);
+    background-image: url(imagens/CSS-imagem.png);
 }
 
 .MySQL-imagem{
-    background-image: url(../imagens/MySQL-imagem.png);
+    background-image: url(imagens/MySQL-imagem.png);
 }
 
 .GH-imagem{
@@ -2157,15 +2157,15 @@ section{
 }
 
 .VS-imagem{
-    background-image: url(../imagens/VS-imagem.png);
+    background-image: url(imagens/VS-imagem.png);
 }
 
 .VSCode-imagem{
-    background-image: url(../imagens/VSCode-imagem.png);
+    background-image: url(imagens/VSCode-imagem.png);
 }
 
 .F-imagem{
-    background-image: url(../imagens/F-imagem.png);
+    background-image: url(imagens/F-imagem.png);
 }
 
 
