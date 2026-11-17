@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/logo.png">
-    <title>Edson Augusto • Desenvolvedor em Contagem</title>
+    <title data-en="Edson Augusto • Developer in Contagem">Edson Augusto • Desenvolvedor em Contagem</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,40 +14,36 @@
 
 <body>
     <header>
-        <a href="#"><div id="logo"></div></a>
+        <a href="#inicio" aria-label="Voltar ao início" data-en-aria-label="Back to home"><div id="logo"></div></a>
 
-        <nav>
+        <nav aria-label="Navegação principal" data-en-aria-label="Main navigation">
             <ul>
-                <li><a href="#inicio" class="red">INÍCIO</a></li>
-                <li><a href="#sobre">SOBRE</a></li>
-                <li><a href="#habilidades">HABILIDADES</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
-                <li><a href="#contato">CONTATO</a></li>
-                <div id="triangulo"></div>
+                <li><a href="#inicio" class="ativo" aria-current="location" data-en="HOME">INÍCIO</a></li>
+                <li><a href="#sobre" data-en="ABOUT">SOBRE</a></li>
+                <li><a href="#habilidades" data-en="SKILLS">HABILIDADES</a></li>
+                <li><a href="#projetos" data-en="PROJECTS">PROJETOS</a></li>
+                <li><a href="#contato" data-en="CONTACT">CONTATO</a></li>
+                <li id="triangulo" aria-hidden="true"></li>
             </ul>
         </nav>
         
         <div id="header-direita">
-            <button id="botaoTema"><div class="imagem"></div></button>
+            <button id="botaoTema" type="button" aria-label="Alternar tema claro e escuro" data-en-aria-label="Toggle light and dark theme"><div class="imagem"></div></button>
 
-            <button id="en-pt">
-                <a href="">
-                    <div id="internet-imagem"></div>
-                    <p>PT</p>
-                    <div id="seta-imagem"></div>
-                </a>
+            <button id="en-pt" type="button" aria-label="Alterar idioma para inglês" data-en-aria-label="Switch language to Portuguese">
+                <div id="internet-imagem"></div>
+                <p data-en="EN">PT</p>
+                <div id="seta-imagem"></div>
             </button>
 
             <button id="curriculo">
-                <a href="./curriculo.pdf" download="Curriculo_Edson_Augusto">
+                <a href="./curriculo.pdf" download="Curriculo_Edson_Augusto" aria-label="Baixar currículo em PDF" data-en-aria-label="Download resume as PDF">
                     <div id="download-imagem"></div>
-                    <p>CURRÍCULO</p>
+                    <p data-en="RESUME">CURRÍCULO</p>
                 </a>
             </button>
         </div>
     </header>
-
-    <!-- section fantasma, fica atrás do header -->
     <div id="fantasma-header"></div>
 
     
@@ -57,35 +53,33 @@
     <main>
         <section id="inicio">
             <div id="conteudo">
-                <p id="cima-titulo"><span class="red">//</span> DESENVOLVIMENTO EM FORMAÇÃO</p>
+                <p id="cima-titulo"><span class="red">//</span> <span data-en="DEVELOPER IN TRAINING">DESENVOLVIMENTO EM FORMAÇÃO</span></p>
 
                 <h1>EDSON <br>
                 <span id="vermelho-transicao">AUGUSTO</span></h1>
                 
                 <div id="textos-animados" class="roboto">
                     <p id="texto-minusculo"><span id="numero-minusculo">01</span> / <span>03</span></p>
-                    <p id="texto-explosivo">CRIATIVIDADE EM AÇÃO.</p>
+                    <p id="texto-explosivo" data-en="CREATIVITY IN ACTION." data-en-frases="CODE IN PROGRESS.|IDEAS BEYOND ORBIT.|CREATIVITY IN ACTION.">CRIATIVIDADE EM AÇÃO.</p>
                     <hr>
                 </div>
 
 
-                <a href="https://github.com/22501924-eng">
-                    <div id="git-hub-icone" class="icones-inicio">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z"/></svg>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/edson-augusto-01114041a/">
-                    <div id="linkedin-icone" class="icones-inicio">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"/></svg>
-                    </div>
-                </a>
+                <div id="redes-inicio">
+                    <a href="https://github.com/22501924-eng" aria-label="GitHub de Edson Augusto" data-en-aria-label="Edson Augusto&#x27;s GitHub">
+                        <div id="git-hub-icone" class="icones-topo"></div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/edson-augusto-01114041a/" aria-label="LinkedIn de Edson Augusto" data-en-aria-label="Edson Augusto&#x27;s LinkedIn">
+                        <div id="linkedin-icone" class="icones-topo"></div>
+                    </a>
+                </div>
             </div>
 
-            <div id="detalhes-borda" class="div-cinza-perfil">
-                <div class="div-vermelha-perfil">
+            <div id="detalhes-borda" class="perfil-cinza">
+                <div class="perfil-red">
                     <div id="perfil-background" class="card-borda">
                         <div id="perfil">
-                            <p id="cima">EA / PERFIL</p>
+                            <p id="cima" data-en="EA / PROFILE">EA / PERFIL</p>
 
                             <div id="foto-background" class="card-borda">
                                 <div id="foto"></div>
@@ -97,7 +91,7 @@
                                 </p>
                                 
                                 <div class="bolinhas">
-                                    <div class="bolinha-vermelha"></div>
+                                    <div class="bolinha-red"></div>
                                     <div></div>
                                     <div></div>
                                 </div>
@@ -117,21 +111,24 @@
 
 
 
+
+
+
         <section id="sobre">
             <div id="topo">
                 <div>
                     <p class="roboto">
-                        01 / <span class="red">SOBRE</span>
+                        01 / <span class="red" data-en="ABOUT">SOBRE</span>
                     </p>
                     <h2>
-                        POR TRÁS <br>
-                        <span class="red">DO CÓDIGO_</span>
+                        <span data-en="BEHIND">POR TRÁS</span> <br>
+                        <span class="red" data-en="THE CODE_">DO CÓDIGO_</span>
                     </h2>
                 </div>
 
                 
-                <div class="texto-direita">
-                    <p>Um pouco sobre quem sou </p><p>e o que busco construir.</p>
+                <div class="texto-dir">
+                    <p data-en="A little about who I am">Um pouco sobre quem sou </p><p data-en="and what I want to build.">e o que busco construir.</p>
                 </div>
             </div>
 
@@ -139,21 +136,21 @@
 
 
             <div class="card-borda">
-                <div class="card-conteudo-cima-fantasma">
-                    <div class="card-conteudo-cima">
-                        <div class="card-cima">
+                <div class="card-topo-base">
+                    <div class="card-topo">
+                        <div class="card-cabeca">
                             <div id="div-suprema">
-                                <div class="textinho-topo">
+                                <div class="texto-topo">
                                     <div id="code-imagem"></div>
-                                    <p class="roboto">edson <span class="red">/</span> sobre</p>
+                                    <p class="roboto">edson <span class="red">/</span> <span data-en="about">sobre</span></p>
                                 </div>
 
 
-                                <div class="card-cima-detalhes"></div>
+                                <div class="card-detalhe"></div>
 
 
                                 <div class="bolinhas">
-                                    <div class="bolinha-vermelha"></div>
+                                    <div class="bolinha-red"></div>
                                     <div></div>
                                     <div></div>
                                 </div>
@@ -163,52 +160,52 @@
                 </div>
 
 
-                <div class="card-conteudo-baixo">
-                    <div class="card-dentro">
+                <div class="card-baixo">
+                    <div class="card-interno">
                         <div class="esquerda">
                             <div id="titulo-texto">
                                 <div id="linha-lado"></div>
-                                <h3>Sou <span class="red">Edson Augusto.</h3></span>
-                                <h4>A curiosidade é o ponto de <br>partida do que eu construo.</h4>
+                                <h3><span data-en="I&#x27;m">Sou</span> <span class="red">Edson Augusto.</span></h3>
+                                <h4><span data-en="Curiosity is the starting point">A curiosidade é o ponto de</span> <br><span data-en="for everything I build.">partida do que eu construo.</span></h4>
                             </div>
 
-                            <p id="texto-sobre-mim">Sou Edson, tenho 16 anos e sou estudante de Informática no COTEMIG. Sou apaixonado por tecnologia, lógica e criação, e gosto de entender como sistemas, aplicações e soluções digitais funcionam. Tenho interesse em transformar ideias em projetos reais, utilizando a programação e o raciocínio lógico para criar, testar e desenvolver diferentes soluções.<br><br>
+                            <p id="texto-sobre-mim"><span data-en="I&#x27;m Edson, a 16-year-old IT student at COTEMIG. I&#x27;m passionate about technology, logic and creativity, and I enjoy understanding how systems, applications and digital solutions work. I want to turn ideas into real projects using programming and logical thinking to create, test and develop different solutions.">Sou Edson, tenho 16 anos e sou estudante de Informática no COTEMIG. Sou apaixonado por tecnologia, lógica e criação, e gosto de entender como sistemas, aplicações e soluções digitais funcionam. Tenho interesse em transformar ideias em projetos reais, utilizando a programação e o raciocínio lógico para criar, testar e desenvolver diferentes soluções.</span><br><br>
 
-                            Durante minha formação, venho ampliando meus conhecimentos em desenvolvimento web, programação e bancos de dados, sempre buscando aplicar o que aprendo em projetos práticos. Também procuro evoluir de forma constante, pesquisando novas possibilidades, aprimorando minhas habilidades e desenvolvendo cada vez mais minha autonomia como programador.</p>
+                            <span data-en="Throughout my studies, I&#x27;ve been expanding my knowledge of web development, programming and databases, always applying what I learn to practical projects. I also aim to keep improving by exploring new possibilities, developing my skills and becoming more independent as a programmer.">Durante minha formação, venho ampliando meus conhecimentos em desenvolvimento web, programação e bancos de dados, sempre buscando aplicar o que aprendo em projetos práticos. Também procuro evoluir de forma constante, pesquisando novas possibilidades, aprimorando minhas habilidades e desenvolvendo cada vez mais minha autonomia como programador.</span></p>
                             
 
 
                             <div id="tres-quadros">
                                 <div id="dois-quadros">
                                     <div class="card-borda">
-                                        <div id="localizacao" class="card-conteudo">
-                                            <div id="imagem-localizacao" class="imagem-icone"></div>
-                                            <div class="informacoes">
-                                                <p>LOCALIZAÇÃO</p>
-                                                <p class="roboto-dezesseis">Contagem, MG</p>
+                                        <div id="localizacao" class="card-corpo">
+                                            <div id="imagem-localizacao" class="img-icone"></div>
+                                            <div class="info">
+                                                <p data-en="LOCATION">LOCALIZAÇÃO</p>
+                                                <p class="mono-peq">Contagem, MG</p>
                                             </div>
                                         </div>
                                     </div>
 
 
                                     <div class="card-borda">
-                                        <div id="foco" class="card-conteudo">
-                                            <div id="imagem-foco" class="imagem-icone"></div>
-                                            <div class="informacoes">
-                                                <p>FOCO</p>
-                                                <p class="roboto-dezesseis">Fullstack</p>
+                                        <div id="foco" class="card-corpo">
+                                            <div id="imagem-foco" class="img-icone"></div>
+                                            <div class="info">
+                                                <p data-en="FOCUS">FOCO</p>
+                                                <p class="mono-peq">Fullstack</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
 
-                                <div class="div-vermelha">
+                                <div class="fundo-red">
                                     <div id="curriculo-barra">
                                         <div class="card-borda">
-                                            <a class="card-conteudo" class="card-conteudo" href="./curriculo.pdf" download="Curriculo_Edson_Augusto">
+                                            <a class="card-corpo" href="./curriculo.pdf" download="Curriculo_Edson_Augusto">
                                                 <div id="imagem-baixar"></div>
-                                                <h6>VER CURRÍCULO</h6>
+                                                <h6 data-en="VIEW RESUME">VER CURRÍCULO</h6>
                                                 <h6 class="red">PDF</h6>
                                             </a>
                                         </div>
@@ -226,8 +223,8 @@
 
                         <div class="direita">
                             <div class="direita-topo">
-                                <p class="roboto-dezesseis">
-                                <span>MEU JEITO DE TRABALHAR</span>
+                                <p class="mono-peq">
+                                <span data-en="HOW I WORK">MEU JEITO DE TRABALHAR</span>
                                 <span class="red">01 — 03</span>
                                 </p>
                             </div>
@@ -237,72 +234,72 @@
                             <div id="abas">
                                 <details open>
                                     <summary>
-                                        <span class="roboto-dezesseis">01</span>
-                                        <h5>Criar com propósito.</h5>
-                                        <div class="plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"/></svg></div>
+                                        <span class="mono-peq">01</span>
+                                        <h5 data-en="Build with purpose.">Criar com propósito.</h5>
+                                        <div class="plus"></div>
                                     </summary>
                                     
                                     <div class="aba">
-                                        <p>Gosto de entender como sistemas e aplicações funcionam. 
+                                        <p data-en="I enjoy understanding how systems and applications work. I use logic and creativity to turn ideas into something useful.">Gosto de entender como sistemas e aplicações funcionam. 
                                             Uso lógica e criatividade para transformar uma ideia 
                                             em algo que possa ser usado.
                                         </p>
 
-                                        <p class="roboto-dezesseis">
-                                            <span>WEB</span><span>LÓGICA</span><span>INTERFACES</span>
+                                        <p class="mono-peq">
+                                            <span>WEB</span><span data-en="LOGIC">LÓGICA</span><span>INTERFACES</span>
                                         </p>
                                     </div>
                                 </details>
 
                                 <details>
                                     <summary>
-                                        <span class="roboto-dezesseis">02</span>
-                                        <h5>Aprender fazendo.</h5>
-                                        <div class="plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"/></svg></div>
+                                        <span class="mono-peq">02</span>
+                                        <h5 data-en="Learn by doing.">Aprender fazendo.</h5>
+                                        <div class="plus"></div>
                                     </summary>
 
                                     <div class="aba">
-                                        <p>
+                                        <p data-en="I research, experiment and try different approaches. Projects are where I put what I learn into practice and discover what I need to improve.">
                                             Pesquiso, experimento e testo diferentes caminhos. 
                                             Os projetos são onde coloco o que aprendo em prática 
                                             e descubro o que preciso melhorar.
                                         </p>
 
-                                        <p class="roboto-dezesseis">
-                                            <span>PESQUISA</span><span>PRÁTICA</span><span>EVOLUÇÃO</span>
+                                        <p class="mono-peq">
+                                            <span data-en="RESEARCH">PESQUISA</span><span data-en="PRACTICE">PRÁTICA</span><span data-en="GROWTH">EVOLUÇÃO</span>
                                         </p>
                                     </div>
                                 </details>
 
                                 <details>
                                     <summary>
-                                        <span class="roboto-dezesseis">03</span>
-                                        <h5>Compartilhar ideias.</h5>
-                                        <div class="plus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"/></svg></div>
+                                        <span class="mono-peq">03</span>
+                                        <h5 data-en="Share ideas.">Compartilhar ideias.</h5>
+                                        <div class="plus"></div>
                                     </summary>
 
                                     <div class="aba">
-                                        <p>
+                                        <p data-en="I find it easy to explain concepts and organize ideas. Sharing what I&#x27;ve learned also helps me see problems from another perspective.">
                                             Tenho facilidade para explicar conceitos e organizar ideias. 
                                             Compartilhar o que entendi também me ajuda a 
                                             enxergar o problema de outro jeito.
                                         </p>
 
-                                        <p class="roboto-dezesseis">
-                                            <span>COMUNICAÇÃO</span><span>CLAREZA</span>
+                                        <p class="mono-peq">
+                                            <span data-en="COMMUNICATION">COMUNICAÇÃO</span><span data-en="CLARITY">CLAREZA</span>
                                         </p>
                                     </div>
                                 </details>
                             </div>
 
 
-                            <div class="div-vermelha">
+                            <div class="fundo-red">
                                 <a href="#contato" id="contatinho">
                                     <div class="card-borda">
-                                        <div class="card-conteudo">
+                                        <div class="card-corpo">
                                             <div id="bolinha-piscando"></div>
-                                            <h6>Aberto a novos projetos e conexões</h6>
-                                            <div id="seta-cima"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M342.6 73.4C330.1 60.9 309.8 60.9 297.3 73.4L137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7C149.8 291.2 170.1 291.2 182.6 278.7L288 173.3L288 544C288 561.7 302.3 576 320 576C337.7 576 352 561.7 352 544L352 173.3L457.4 278.7C469.9 291.2 490.2 291.2 502.7 278.7C515.2 266.2 515.2 245.9 502.7 233.4L342.7 73.4z"/></svg></div>
+                                            <h6 data-en="Open to new projects and connections">Aberto a novos projetos e conexões</h6>
+                                            <div id="seta-cima"></div>
                                         </div>
                                     </div>
                                 </a>
@@ -323,38 +320,39 @@
 
 
 
+
         <section id="habilidades">
             <div id="topo-habilidades">
                 <div>
                     <p class="roboto">
-                        02 / <span class="red">HABILIDADES</span>
+                        02 / <span class="red" data-en="SKILLS">HABILIDADES</span>
                     </p>
                     <h2>
-                        MINHAS <br>
-                        <span class="red">FERRAMENTAS_</span>
+                        <span data-en="MY">MINHAS</span> <br>
+                        <span class="red" data-en="TOOLS_">FERRAMENTAS_</span>
                     </h2>
                 </div>
 
-                <div class="texto-direita">
-                    <p>Explore as pastas e veja como</p><p>utilizo cada tecnologia.</p>
+                <div class="texto-dir">
+                    <p data-en="Explore the folders to see how">Explore as pastas e veja como</p><p data-en="I use each technology.">utilizo cada tecnologia.</p>
                 </div>
             </div>
 
 
             <div class="card-borda">
-                <div class="card-conteudo-cima-fantasma">
-                    <div class="card-conteudo-cima">
-                        <div class="card-cima">
+                <div class="card-topo-base">
+                    <div class="card-topo">
+                        <div class="card-cabeca">
                             <div id="div-habilidades-cima">
-                                <div class="textinho-topo">
-                                    <svg class="code-imagem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-6 7 6 7M16 5l6 7-6 7M14 2l-4 20"/></svg>
+                                <div class="texto-topo">
+                                    <span class="code-imagem" aria-hidden="true"></span>
                                     <p class="roboto">edson <span class="red">/</span> skills</p>
                                 </div>
 
-                                <div class="card-cima-detalhes"></div>
+                                <div class="card-detalhe"></div>
 
                                 <div class="bolinhas">
-                                    <div class="bolinha-vermelha"></div>
+                                    <div class="bolinha-red"></div>
                                     <div></div>
                                     <div></div>
                                 </div>
@@ -364,49 +362,49 @@
                 </div>
 
 
-                <div class="card-conteudo-baixo">
-                    <div class="card-dentro">
+                <div class="card-baixo">
+                    <div class="card-interno">
                         <div id="pastas-habilidades">
-                            <button class="pasta-habilidade pasta-selecionada" type="button" value="desenvolvimento" aria-pressed="true" aria-controls="lista-desenvolvimento">
-                                <span class="pasta-conteudo">
-                                    <svg class="icone-pasta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-6 7 6 7M16 5l6 7-6 7M14 2l-4 20"/></svg>
-                                    <span class="nome-pasta">DESENVOLVIMENTO</span>
-                                    <span class="pasta-baixo">
-                                        <span>06 tecnologias</span>
-                                        <span class="abrir-pasta roboto-dezesseis">ABERTA →</span>
+                            <button class="pasta-hab pasta-ativa" type="button" value="desenvolvimento" aria-pressed="true" aria-controls="lista-desenvolvimento">
+                                <span class="pasta-corpo">
+                                    <span class="pasta-icone ico-codigo" aria-hidden="true"></span>
+                                    <span class="pasta-nome" data-en="DEVELOPMENT">DESENVOLVIMENTO</span>
+                                    <span class="pasta-rodape">
+                                        <span data-en="06 technologies">06 tecnologias</span>
+                                        <span class="pasta-abrir mono-peq" data-en="OPENED →" data-en-aberta="OPENED →">ABERTA →</span>
                                     </span>
                                 </span>
                             </button>
 
-                            <button class="pasta-habilidade" type="button" value="front-end" aria-pressed="false" aria-controls="lista-front-end">
-                                <span class="pasta-conteudo">
-                                    <svg class="icone-pasta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="18" rx="1"/><path d="M2 8h20M5 5.5h1M8 5.5h1"/></svg>
-                                    <span class="nome-pasta">FRONT-END</span>
-                                    <span class="pasta-baixo">
-                                        <span>03 tecnologias</span>
-                                        <span class="abrir-pasta roboto-dezesseis">ABRIR →</span>
+                            <button class="pasta-hab" type="button" value="front-end" aria-pressed="false" aria-controls="lista-front-end">
+                                <span class="pasta-corpo">
+                                    <span class="pasta-icone ico-janela" aria-hidden="true"></span>
+                                    <span class="pasta-nome">FRONT-END</span>
+                                    <span class="pasta-rodape">
+                                        <span data-en="03 technologies">03 tecnologias</span>
+                                        <span class="pasta-abrir mono-peq" data-en="OPEN →" data-en-aberta="OPENED →">ABRIR →</span>
                                     </span>
                                 </span>
                             </button>
 
-                            <button class="pasta-habilidade" type="button" value="back-end" aria-pressed="false" aria-controls="lista-back-end">
-                                <span class="pasta-conteudo">
-                                    <svg class="icone-pasta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="2" width="18" height="7" rx="1"/><rect x="3" y="15" width="18" height="7" rx="1"/><path d="M7 5.5h1M7 18.5h1M12 9v6M11 5.5h6M11 18.5h6"/></svg>
-                                    <span class="nome-pasta">BACK-END</span>
-                                    <span class="pasta-baixo">
-                                        <span>03 tecnologias</span>
-                                        <span class="abrir-pasta roboto-dezesseis">ABRIR →</span>
+                            <button class="pasta-hab" type="button" value="back-end" aria-pressed="false" aria-controls="lista-back-end">
+                                <span class="pasta-corpo">
+                                    <span class="pasta-icone ico-servidor" aria-hidden="true"></span>
+                                    <span class="pasta-nome">BACK-END</span>
+                                    <span class="pasta-rodape">
+                                        <span data-en="02 technologies">02 tecnologias</span>
+                                        <span class="pasta-abrir mono-peq" data-en="OPEN →" data-en-aberta="OPENED →">ABRIR →</span>
                                     </span>
                                 </span>
                             </button>
 
-                            <button class="pasta-habilidade" type="button" value="ferramentas" aria-pressed="false" aria-controls="lista-ferramentas">
-                                <span class="pasta-conteudo">
-                                    <svg class="icone-pasta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 3 5 1 2 3-3 3-3-2-1-5Zm7 7 10 10M20 3a5 5 0 0 0-6 6L3 20l1 1L15 10a5 5 0 0 0 6-6l-3 3-2-2 3-3"/></svg>
-                                    <span class="nome-pasta">FERRAMENTAS</span>
-                                    <span class="pasta-baixo">
-                                        <span>05 ferramentas</span>
-                                        <span class="abrir-pasta roboto-dezesseis">ABRIR →</span>
+                            <button class="pasta-hab" type="button" value="ferramentas" aria-pressed="false" aria-controls="lista-ferramentas">
+                                <span class="pasta-corpo">
+                                    <span class="pasta-icone ico-ferramentas" aria-hidden="true"></span>
+                                    <span class="pasta-nome" data-en="TOOLS">FERRAMENTAS</span>
+                                    <span class="pasta-rodape">
+                                        <span data-en="04 tools">04 ferramentas</span>
+                                        <span class="pasta-abrir mono-peq" data-en="OPEN →" data-en-aberta="OPENED →">ABRIR →</span>
                                     </span>
                                 </span>
                             </button>
@@ -418,151 +416,151 @@
 
                         <div id="arquivos-habilidades">
                             <div class="esquerda">
-                                <p id="nome-pasta-aberta" class="roboto-dezesseis">/ <span>DESENVOLVIMENTO</span></p>
+                                <p id="nome-pasta-aberta" class="mono-peq">/ <span data-en="DEVELOPMENT">DESENVOLVIMENTO</span></p>
 
-                                <div id="lista-desenvolvimento" class="lista-habilidades lista-aberta">
-                                    <button class="arquivo-habilidade arquivo-selecionado" type="button" value="cs" aria-pressed="true" aria-controls="documento-cs">
-                                        <div class="C-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                <div id="lista-desenvolvimento" class="lista-hab lista-ativa">
+                                    <button class="arquivo-hab arquivo-ativo" type="button" value="cs" aria-pressed="true" aria-controls="documento-cs">
+                                        <div class="img-cs img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>C#</strong>
-                                            <small>Intermediário</small>
+                                            <small data-en="Intermediate">Intermediário</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.cs</span>
+                                        <span class="arquivo-ext mono-peq">.cs</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="py" aria-pressed="false" aria-controls="documento-py">
-                                        <div class="Py-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="py" aria-pressed="false" aria-controls="documento-py">
+                                        <div class="img-py img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>Python</strong>
-                                            <small>Básico</small>
+                                            <small data-en="Beginner">Básico</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.py</span>
+                                        <span class="arquivo-ext mono-peq">.py</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="js" aria-pressed="false" aria-controls="documento-js">
-                                        <div class="JS-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="js" aria-pressed="false" aria-controls="documento-js">
+                                        <div class="img-js img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>JavaScript</strong>
-                                            <small>Básico</small>
+                                            <small data-en="Beginner">Básico</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.js</span>
+                                        <span class="arquivo-ext mono-peq">.js</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="html" aria-pressed="false" aria-controls="documento-html">
-                                        <div class="HTML-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="html" aria-pressed="false" aria-controls="documento-html">
+                                        <div class="img-html img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>HTML</strong>
-                                            <small>Em formação</small>
+                                            <small data-en="Learning">Em formação</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.html</span>
+                                        <span class="arquivo-ext mono-peq">.html</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="css" aria-pressed="false" aria-controls="documento-css">
-                                        <div class="CSS-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="css" aria-pressed="false" aria-controls="documento-css">
+                                        <div class="img-css img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>CSS</strong>
-                                            <small>Em formação</small>
+                                            <small data-en="Learning">Em formação</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.css</span>
+                                        <span class="arquivo-ext mono-peq">.css</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="mysql" aria-pressed="false" aria-controls="documento-mysql">
-                                        <div class="MySQL-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="mysql" aria-pressed="false" aria-controls="documento-mysql">
+                                        <div class="img-mysql img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>MySQL</strong>
-                                            <small>Em formação</small>
+                                            <small data-en="Learning">Em formação</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.sql</span>
+                                        <span class="arquivo-ext mono-peq">.sql</span>
                                     </button>
 
                                 </div>
 
-                                <div id="lista-front-end" class="lista-habilidades">
-                                    <button class="arquivo-habilidade" type="button" value="html" aria-pressed="false" aria-controls="documento-html">
-                                        <div class="HTML-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                <div id="lista-front-end" class="lista-hab">
+                                    <button class="arquivo-hab" type="button" value="html" aria-pressed="false" aria-controls="documento-html">
+                                        <div class="img-html img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>HTML</strong>
-                                            <small>Em formação</small>
+                                            <small data-en="Learning">Em formação</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.html</span>
+                                        <span class="arquivo-ext mono-peq">.html</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="css" aria-pressed="false" aria-controls="documento-css">
-                                        <div class="CSS-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="css" aria-pressed="false" aria-controls="documento-css">
+                                        <div class="img-css img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>CSS</strong>
-                                            <small>Em formação</small>
+                                            <small data-en="Learning">Em formação</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.css</span>
+                                        <span class="arquivo-ext mono-peq">.css</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="js" aria-pressed="false" aria-controls="documento-js">
-                                        <div class="JS-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="js" aria-pressed="false" aria-controls="documento-js">
+                                        <div class="img-js img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>JavaScript</strong>
-                                            <small>Básico</small>
+                                            <small data-en="Beginner">Básico</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.js</span>
+                                        <span class="arquivo-ext mono-peq">.js</span>
                                     </button>
 
                                 </div>
 
-                                <div id="lista-back-end" class="lista-habilidades">
-                                    <button class="arquivo-habilidade" type="button" value="cs" aria-pressed="false" aria-controls="documento-cs">
-                                        <div class="C-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                <div id="lista-back-end" class="lista-hab">
+                                    <button class="arquivo-hab" type="button" value="cs" aria-pressed="false" aria-controls="documento-cs">
+                                        <div class="img-cs img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>C#</strong>
-                                            <small>Intermediário</small>
+                                            <small data-en="Intermediate">Intermediário</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.cs</span>
+                                        <span class="arquivo-ext mono-peq">.cs</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="mysql" aria-pressed="false" aria-controls="documento-mysql">
-                                        <div class="MySQL-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="mysql" aria-pressed="false" aria-controls="documento-mysql">
+                                        <div class="img-mysql img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>MySQL</strong>
-                                            <small>Em formação</small>
+                                            <small data-en="Learning">Em formação</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">.sql</span>
+                                        <span class="arquivo-ext mono-peq">.sql</span>
                                     </button>
 
                                 </div>
 
-                                <div id="lista-ferramentas" class="lista-habilidades">
-                                    <button class="arquivo-habilidade" type="button" value="github" aria-pressed="false" aria-controls="documento-github">
-                                        <div class="GH-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                <div id="lista-ferramentas" class="lista-hab">
+                                    <button class="arquivo-hab" type="button" value="github" aria-pressed="false" aria-controls="documento-github">
+                                        <div class="img-github img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>GitHub</strong>
-                                            <small>Em uso</small>
+                                            <small data-en="In use">Em uso</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">repo</span>
+                                        <span class="arquivo-ext mono-peq">repo</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="vs" aria-pressed="false" aria-controls="documento-vs">
-                                        <div class="VS-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="vs" aria-pressed="false" aria-controls="documento-vs">
+                                        <div class="img-vs img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>Visual Studio</strong>
-                                            <small>Em uso</small>
+                                            <small data-en="In use">Em uso</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">IDE</span>
+                                        <span class="arquivo-ext mono-peq">IDE</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="vscode" aria-pressed="false" aria-controls="documento-vscode">
-                                        <div class="VSCode-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="vscode" aria-pressed="false" aria-controls="documento-vscode">
+                                        <div class="img-vscode img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>VS Code</strong>
-                                            <small>Em uso</small>
+                                            <small data-en="In use">Em uso</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">code</span>
+                                        <span class="arquivo-ext mono-peq">code</span>
                                     </button>
 
-                                    <button class="arquivo-habilidade" type="button" value="figma" aria-pressed="false" aria-controls="documento-figma">
-                                        <div class="F-imagem imagem-habilidade"></div>
-                                        <span class="nome-arquivo">
+                                    <button class="arquivo-hab" type="button" value="figma" aria-pressed="false" aria-controls="documento-figma">
+                                        <div class="img-figma img-hab"></div>
+                                        <span class="arquivo-nome">
                                             <strong>Figma</strong>
-                                            <small>Em uso</small>
+                                            <small data-en="In use">Em uso</small>
                                         </span>
-                                        <span class="extensao-arquivo roboto-dezesseis">UI</span>
+                                        <span class="arquivo-ext mono-peq">UI</span>
                                     </button>
 
                                 </div>
@@ -571,258 +569,258 @@
 
 
                             <div id="documento-habilidades" class="card-borda">
-                                <div class="card-conteudo">
-                                    <div class="documento-cima">
-                                        <p class="roboto-dezesseis">skills / <span id="caminho-pasta">desenvolvimento</span> / <span id="caminho-arquivo">cs</span></p>
-                                        <p class="roboto-dezesseis"><span id="numero-documento" class="red">01</span> / <span id="total-documentos" class="red">06</span></p>
+                                <div class="card-corpo">
+                                    <div class="doc-topo">
+                                        <p class="mono-peq"><span data-en="skills /">skills /</span> <span id="caminho-pasta" data-en="development">desenvolvimento</span> / <span id="caminho-arquivo">cs</span></p>
+                                        <p class="mono-peq"><span id="numero-documento" class="red">01</span> / <span id="total-documentos" class="red">06</span></p>
                                     </div>
 
                                     <div id="documentos-habilidades" aria-live="polite">
-                                        <div id="documento-cs" class="documento-habilidade documento-aberto">
-                                            <div class="titulo-documento">
-                                                <div class="C-imagem imagem-habilidade"></div>
+                                        <div id="documento-cs" class="doc-hab doc-aberto">
+                                            <div class="doc-titulo">
+                                                <div class="img-cs img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Intermediário</p>
+                                                    <p class="doc-nivel mono-peq" data-en="Intermediate">Intermediário</p>
                                                     <h3>C#</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Desenvolvimento de aplicações com foco em lógica, estruturas de dados e resolução de problemas.</p>
+                                            <p data-en="Developing applications focused on logic, data structures and problem solving.">Desenvolvimento de aplicações com foco em lógica, estruturas de dados e resolução de problemas.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Lógica e estruturas de controle</li>
-                                                <li>Organização de dados e cálculos</li>
-                                                <li>Resolução de problemas</li>
+                                                <li data-en="Logic and control structures">Lógica e estruturas de controle</li>
+                                                <li data-en="Organizing data and calculations">Organização de dados e cálculos</li>
+                                                <li data-en="Problem solving">Resolução de problemas</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">APLICADO EM</p>
-                                                <a href="#projetos">Monitoramento de Usina Solar →</a>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="APPLIED IN">APLICADO EM</p>
+                                                <a href="https://github.com/22501924-eng/Monitoramento-de-Usina-Solar" target="_blank" rel="noopener noreferrer" data-en="Solar Plant Monitoring →">Monitoramento de Usina Solar →</a>
                                             </div>
                                         </div>
 
-                                        <div id="documento-py" class="documento-habilidade">
-                                            <div class="titulo-documento">
-                                                <div class="Py-imagem imagem-habilidade"></div>
+                                        <div id="documento-py" class="doc-hab">
+                                            <div class="doc-titulo">
+                                                <div class="img-py img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Básico</p>
+                                                    <p class="doc-nivel mono-peq" data-en="Beginner">Básico</p>
                                                     <h3>Python</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Programas básicos para exercitar a lógica e organizar soluções passo a passo.</p>
+                                            <p data-en="Basic programs to practice logic and organize step-by-step solutions.">Programas básicos para exercitar a lógica e organizar soluções passo a passo.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Variáveis e condições</li>
-                                                <li>Listas e estruturas de repetição</li>
-                                                <li>Organização de código em funções</li>
+                                                <li data-en="Variables and conditions">Variáveis e condições</li>
+                                                <li data-en="Lists and loops">Listas e estruturas de repetição</li>
+                                                <li data-en="Organizing code into functions">Organização de código em funções</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">FOCO DE APRENDIZADO</p>
-                                                <p class="texto-aplicacao">Prática de lógica e programas básicos</p>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="LEARNING FOCUS">FOCO DE APRENDIZADO</p>
+                                                <p class="texto-app" data-en="Practicing logic and basic programs">Prática de lógica e programas básicos</p>
                                             </div>
                                         </div>
 
-                                        <div id="documento-js" class="documento-habilidade">
-                                            <div class="titulo-documento">
-                                                <div class="JS-imagem imagem-habilidade"></div>
+                                        <div id="documento-js" class="doc-hab">
+                                            <div class="doc-titulo">
+                                                <div class="img-js img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Básico</p>
+                                                    <p class="doc-nivel mono-peq" data-en="Beginner">Básico</p>
                                                     <h3>JavaScript</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Programação para acrescentar comportamento e interação às páginas web.</p>
+                                            <p data-en="Programming to add behavior and interaction to web pages.">Programação para acrescentar comportamento e interação às páginas web.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Variáveis e condições</li>
-                                                <li>Estruturas de repetição</li>
-                                                <li>Interação com elementos da página</li>
+                                                <li data-en="Variables and conditions">Variáveis e condições</li>
+                                                <li data-en="Loops">Estruturas de repetição</li>
+                                                <li data-en="Interacting with page elements">Interação com elementos da página</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">FOCO DE APRENDIZADO</p>
-                                                <p class="texto-aplicacao">Interatividade para páginas web</p>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="LEARNING FOCUS">FOCO DE APRENDIZADO</p>
+                                                <p class="texto-app" data-en="Interactivity for web pages">Interatividade para páginas web</p>
                                             </div>
                                         </div>
 
-                                        <div id="documento-html" class="documento-habilidade">
-                                            <div class="titulo-documento">
-                                                <div class="HTML-imagem imagem-habilidade"></div>
+                                        <div id="documento-html" class="doc-hab">
+                                            <div class="doc-titulo">
+                                                <div class="img-html img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Em formação</p>
+                                                    <p class="doc-nivel mono-peq" data-en="Learning">Em formação</p>
                                                     <h3>HTML</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Estruturação de páginas e organização de conteúdos para a web.</p>
+                                            <p data-en="Structuring pages and organizing web content.">Estruturação de páginas e organização de conteúdos para a web.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Organização de textos e seções</li>
-                                                <li>Imagens, links e navegação</li>
-                                                <li>Estrutura de páginas web</li>
+                                                <li data-en="Organizing text and sections">Organização de textos e seções</li>
+                                                <li data-en="Images, links and navigation">Imagens, links e navegação</li>
+                                                <li data-en="Web page structure">Estrutura de páginas web</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">APLICADO EM</p>
-                                                <a href="#projetos">Kruger · Hamburgueria →</a>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="APPLIED IN">APLICADO EM</p>
+                                                <a href="#projetos" data-en="Kruger · Burger Shop →">Kruger · Hamburgueria →</a>
                                             </div>
                                         </div>
 
-                                        <div id="documento-css" class="documento-habilidade">
-                                            <div class="titulo-documento">
-                                                <div class="CSS-imagem imagem-habilidade"></div>
+                                        <div id="documento-css" class="doc-hab">
+                                            <div class="doc-titulo">
+                                                <div class="img-css img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Em formação</p>
+                                                    <p class="doc-nivel mono-peq" data-en="Learning">Em formação</p>
                                                     <h3>CSS</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Estilização de interfaces e adaptação de layouts para diferentes telas.</p>
+                                            <p data-en="Styling interfaces and adapting layouts to different screens.">Estilização de interfaces e adaptação de layouts para diferentes telas.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Cores, tipografia e espaçamento</li>
-                                                <li>Composição e distribuição do layout</li>
-                                                <li>Adaptação para diferentes telas</li>
+                                                <li data-en="Colors, typography and spacing">Cores, tipografia e espaçamento</li>
+                                                <li data-en="Layout composition and arrangement">Composição e distribuição do layout</li>
+                                                <li data-en="Adapting to different screen sizes">Adaptação para diferentes telas</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">APLICADO EM</p>
-                                                <a href="#projetos">Kruger · Hamburgueria →</a>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="APPLIED IN">APLICADO EM</p>
+                                                <a href="#projetos" data-en="Kruger · Burger Shop →">Kruger · Hamburgueria →</a>
                                             </div>
                                         </div>
 
-                                        <div id="documento-mysql" class="documento-habilidade">
-                                            <div class="titulo-documento">
-                                                <div class="MySQL-imagem imagem-habilidade"></div>
+                                        <div id="documento-mysql" class="doc-hab">
+                                            <div class="doc-titulo">
+                                                <div class="img-mysql img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Em formação</p>
+                                                    <p class="doc-nivel mono-peq" data-en="Learning">Em formação</p>
                                                     <h3>MySQL</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Organização de informações em tabelas e consultas em bancos de dados.</p>
+                                            <p data-en="Organizing information in database tables and queries.">Organização de informações em tabelas e consultas em bancos de dados.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Estruturação de tabelas</li>
-                                                <li>Organização de informações</li>
-                                                <li>Consultas em SQL</li>
+                                                <li data-en="Building tables">Estruturação de tabelas</li>
+                                                <li data-en="Organizing information">Organização de informações</li>
+                                                <li data-en="SQL queries">Consultas em SQL</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">APLICADO EM</p>
-                                                <a href="#projetos">Monitoramento de Academia →</a>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="APPLIED IN">APLICADO EM</p>
+                                                <a href="#projetos" data-en="Gym Monitoring →">Monitoramento de Academia →</a>
                                             </div>
                                         </div>
 
-                                        <div id="documento-github" class="documento-habilidade">
-                                            <div class="titulo-documento">
-                                                <div class="GH-imagem imagem-habilidade"></div>
+                                        <div id="documento-github" class="doc-hab">
+                                            <div class="doc-titulo">
+                                                <div class="img-github img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Em uso</p>
+                                                    <p class="doc-nivel mono-peq" data-en="In use">Em uso</p>
                                                     <h3>GitHub</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Organização e compartilhamento dos repositórios de projetos.</p>
+                                            <p data-en="Organizing and sharing project repositories.">Organização e compartilhamento dos repositórios de projetos.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Publicação de repositórios</li>
-                                                <li>Apresentação dos projetos</li>
-                                                <li>Compartilhamento de código</li>
+                                                <li data-en="Publishing repositories">Publicação de repositórios</li>
+                                                <li data-en="Presenting projects">Apresentação dos projetos</li>
+                                                <li data-en="Sharing code">Compartilhamento de código</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">APLICADO EM</p>
-                                                <a href="https://github.com/22501924-eng">Meus repositórios no GitHub →</a>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="APPLIED IN">APLICADO EM</p>
+                                                <a href="https://github.com/22501924-eng" data-en="My GitHub repositories →">Meus repositórios no GitHub →</a>
                                             </div>
                                         </div>
 
-                                        <div id="documento-vs" class="documento-habilidade">
-                                            <div class="titulo-documento">
-                                                <div class="VS-imagem imagem-habilidade"></div>
+                                        <div id="documento-vs" class="doc-hab">
+                                            <div class="doc-titulo">
+                                                <div class="img-vs img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Em uso</p>
+                                                    <p class="doc-nivel mono-peq" data-en="In use">Em uso</p>
                                                     <h3>Visual Studio</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Ambiente de desenvolvimento utilizado nos estudos de programação.</p>
+                                            <p data-en="Development environment used for programming studies.">Ambiente de desenvolvimento utilizado nos estudos de programação.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Edição de código</li>
-                                                <li>Organização de projetos</li>
-                                                <li>Execução de aplicações</li>
+                                                <li data-en="Editing code">Edição de código</li>
+                                                <li data-en="Organizing projects">Organização de projetos</li>
+                                                <li data-en="Running applications">Execução de aplicações</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">FOCO DE APRENDIZADO</p>
-                                                <p class="texto-aplicacao">Estudos de programação</p>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="LEARNING FOCUS">FOCO DE APRENDIZADO</p>
+                                                <p class="texto-app" data-en="Programming studies">Estudos de programação</p>
                                             </div>
                                         </div>
 
-                                        <div id="documento-vscode" class="documento-habilidade">
-                                            <div class="titulo-documento">
-                                                <div class="VSCode-imagem imagem-habilidade"></div>
+                                        <div id="documento-vscode" class="doc-hab">
+                                            <div class="doc-titulo">
+                                                <div class="img-vscode img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Em uso</p>
+                                                    <p class="doc-nivel mono-peq" data-en="In use">Em uso</p>
                                                     <h3>VS Code</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Editor utilizado na construção e edição de projetos web.</p>
+                                            <p data-en="Editor used to build and edit web projects.">Editor utilizado na construção e edição de projetos web.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Edição de HTML, CSS e JavaScript</li>
-                                                <li>Organização de arquivos</li>
-                                                <li>Desenvolvimento web</li>
+                                                <li data-en="Editing HTML, CSS and JavaScript">Edição de HTML, CSS e JavaScript</li>
+                                                <li data-en="Organizing files">Organização de arquivos</li>
+                                                <li data-en="Web development">Desenvolvimento web</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">FOCO DE APRENDIZADO</p>
-                                                <p class="texto-aplicacao">Construção de páginas web</p>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="LEARNING FOCUS">FOCO DE APRENDIZADO</p>
+                                                <p class="texto-app" data-en="Building web pages">Construção de páginas web</p>
                                             </div>
                                         </div>
 
-                                        <div id="documento-figma" class="documento-habilidade">
-                                            <div class="titulo-documento">
-                                                <div class="F-imagem imagem-habilidade"></div>
+                                        <div id="documento-figma" class="doc-hab">
+                                            <div class="doc-titulo">
+                                                <div class="img-figma img-hab"></div>
                                                 <div>
-                                                    <p class="nivel-documento roboto-dezesseis">Em uso</p>
+                                                    <p class="doc-nivel mono-peq" data-en="In use">Em uso</p>
                                                     <h3>Figma</h3>
                                                 </div>
                                             </div>
 
-                                            <p>Criação de interfaces, organização visual e prototipação do portfólio.</p>
+                                            <p data-en="Designing interfaces, organizing visual elements and prototyping the portfolio.">Criação de interfaces, organização visual e prototipação do portfólio.</p>
 
-                                            <p class="pratica-documento roboto-dezesseis">O QUE COLOCO EM PRÁTICA</p>
+                                            <p class="doc-pratica mono-peq" data-en="WHAT I PUT INTO PRACTICE">O QUE COLOCO EM PRÁTICA</p>
                                             <ul>
-                                                <li>Composição de interfaces</li>
-                                                <li>Identidade visual</li>
-                                                <li>Planejamento das telas</li>
+                                                <li data-en="Interface composition">Composição de interfaces</li>
+                                                <li data-en="Visual identity">Identidade visual</li>
+                                                <li data-en="Planning screens">Planejamento das telas</li>
                                             </ul>
 
-                                            <div class="aplicacao-documento">
-                                                <p class="roboto-dezesseis">APLICADO EM</p>
-                                                <a href="#inicio">Design deste portfólio →</a>
+                                            <div class="doc-aplicacao">
+                                                <p class="mono-peq" data-en="APPLIED IN">APLICADO EM</p>
+                                                <a href="https://www.figma.com/site/3JUEZqt5CggdWI8Jhchjtd/Portif%C3%B3lio?node-id=0-4&amp;t=G8xOfSl9Fzoc9rBJ-0" target="_blank" rel="noopener noreferrer" data-en="This portfolio&#x27;s design →">Design deste portfólio →</a>
                                             </div>
                                         </div>
 
                                     </div>
 
-                                    <div class="documento-baixo">
-                                        <p class="roboto-dezesseis">APRENDIZADO EM CONSTRUÇÃO</p>
-                                        <p class="roboto-dezesseis">EA_</p>
+                                    <div class="doc-baixo">
+                                        <p class="mono-peq" data-en="ALWAYS LEARNING">APRENDIZADO EM CONSTRUÇÃO</p>
+                                        <p class="mono-peq">EA_</p>
                                     </div>
                                 </div>
                             </div>
@@ -834,67 +832,242 @@
 
             <div id="alem-ferramentas">
                 <div>
-                    <p class="roboto-dezesseis">ALÉM DAS FERRAMENTAS</p>
-                    <p>A forma de pensar também faz parte do trabalho.</p>
+                    <p class="mono-peq" data-en="BEYOND THE TOOLS">ALÉM DAS FERRAMENTAS</p>
+                    <p data-en="The way you think is also part of the work.">A forma de pensar também faz parte do trabalho.</p>
                 </div>
 
                 <div id="outras-habilidades">
                     <div>
-                        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3H3v14h4v4l5-4h9V3Z"/></svg>
-                        <p>Comunicação Didática</p>
+                        <span class="ico-hab ico-comunica" aria-hidden="true"></span>
+                        <p data-en="Clear Communication">Comunicação Didática</p>
                     </div>
 
                     <div>
-                        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg>
-                        <p>Resolução de Problemas</p>
+                        <span class="ico-hab ico-problemas" aria-hidden="true"></span>
+                        <p data-en="Problem Solving">Resolução de Problemas</p>
                     </div>
 
                     <div>
-                        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16M12 5C9 2 5 2 2 3v16c4-1 7-1 10 2 3-3 6-3 10-2V3c-3-1-7-1-10 2Z"/></svg>
-                        <p>Aprendizado Autônomo</p>
+                        <span class="ico-hab ico-aprende" aria-hidden="true"></span>
+                        <p data-en="Independent Learning">Aprendizado Autônomo</p>
                     </div>
 
                     <div>
-                        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M9 21h6M9 15c0-3-4-4-4-8a7 7 0 0 1 14 0c0 4-4 5-4 8H9ZM12 9v6"/></svg>
-                        <p>Criatividade</p>
+                        <span class="ico-hab ico-criativo" aria-hidden="true"></span>
+                        <p data-en="Creativity">Criatividade</p>
                     </div>
 
                     <div>
-                        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg>
-                        <p>Inglês · A2</p>
+                        <span class="ico-hab ico-ingles" aria-hidden="true"></span>
+                        <p data-en="English · A2">Inglês · A2</p>
                     </div>
 
                 </div>
             </div>
         </section>
+
+
+
+
+
+
 
 
 
 
 
         <section id="projetos">
-            <div class="card-borda">
-                <div class="card-conteudo"></div>
+            <div id="topo-projetos">
+                <div>
+                    <p class="roboto">03 / <span class="red" data-en="PROJECTS">PROJETOS</span></p>
+                    <h2><span data-en="IDEAS BROUGHT">IDEIAS QUE SAÍRAM</span> <br><span class="red" data-en="TO LIFE_">DO PAPEL_</span></h2>
+                </div>
+
+                <div class="texto-dir">
+                    <p data-en="What I learn takes shape">O que aprendo ganha forma</p><p data-en="in every project.">em cada projeto.</p>
+                </div>
             </div>
+
+
+            <div id="lista-projetos">
+                <article class="projeto">
+                    <div class="moldura card-borda">
+                        <div class="card-corpo">
+                            <div class="proj-topo">
+                                <p class="roboto">edson <span class="red">/</span> projeto_01</p>
+                                <div class="bolinhas" aria-hidden="true"><div class="bolinha-red"></div><div></div><div></div></div>
+                            </div>
+                            <div class="proj-img img-kruger" role="img" aria-label="Prévia da página Kruger Hamburgueria" data-en-aria-label="Preview of the Kruger Burger Shop page"></div>
+                        </div>
+                    </div>
+
+                    <div class="proj-texto">
+                        <p class="proj-tipo roboto"><span class="red">01 /</span> <span data-en="WEB DEVELOPMENT">DESENVOLVIMENTO WEB</span></p>
+                        <h3 data-en="Kruger · Burger Shop">Kruger · Hamburgueria</h3>
+                        <p data-en="Landing page for a fictional burger shop, focused on showcasing products and organizing the page.">Landing page de uma hamburgueria fictícia, com foco na apresentação dos produtos e na organização da página.</p>
+                        <ul class="proj-tech roboto" aria-label="Tecnologias do projeto" data-en-aria-label="Project technologies"><li>HTML</li><li>CSS</li></ul>
+                        <div class="proj-botoes">
+                            <a class="proj-botao botao-red" href="https://22501924-eng.github.io/Lading-Page/" target="_blank" rel="noopener noreferrer"><span data-en="VIEW PROJECT">VER PROJETO</span> <span class="proj-seta" aria-hidden="true"></span></a>
+                            <a class="proj-botao" href="https://github.com/22501924-eng/Lading-Page" target="_blank" rel="noopener noreferrer"><span class="proj-github" aria-hidden="true"></span> <span data-en="CODE">CÓDIGO</span></a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="projeto projeto-inv">
+                    <div class="moldura card-borda">
+                        <div class="card-corpo">
+                            <div class="proj-topo">
+                                <p class="roboto">edson <span class="red">/</span> projeto_02</p>
+                                <div class="bolinhas" aria-hidden="true"><div class="bolinha-red"></div><div></div><div></div></div>
+                            </div>
+                            <div class="proj-img img-solar" role="img" aria-label="Prévia do código em C# de monitoramento de usina solar" data-en-aria-label="Preview of the Solar Plant Monitoring C# code"></div>
+                        </div>
+                    </div>
+
+                    <div class="proj-texto">
+                        <p class="proj-tipo roboto"><span class="red">02 /</span> <span data-en="PROGRAMMING">PROGRAMAÇÃO</span></p>
+                        <h3 data-en="Solar Plant Monitoring">Monitoramento de Usina Solar</h3>
+                        <p data-en="C# application created to calculate solar power plant efficiency and performance, putting programming logic into practice.">Aplicação em C# criada para calcular a eficiência e o desempenho de usinas solares, colocando a lógica de programação em prática.</p>
+                        <ul class="proj-tech roboto" aria-label="Tecnologias do projeto" data-en-aria-label="Project technologies"><li>C#</li></ul>
+                        <div class="proj-botoes">
+                            <button class="proj-botao botao-red abrir-proj" type="button" value="img-solar" aria-haspopup="dialog"><span data-en="VIEW PREVIEW">VER PRÉVIA</span> <span class="proj-seta" aria-hidden="true"></span></button>
+                            <a class="proj-botao" href="https://github.com/22501924-eng/Monitoramento-de-Usina-Solar" target="_blank" rel="noopener noreferrer"><span class="proj-github" aria-hidden="true"></span> <span data-en="CODE">CÓDIGO</span></a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="projeto">
+                    <div class="moldura card-borda">
+                        <div class="card-corpo">
+                            <div class="proj-topo">
+                                <p class="roboto">edson <span class="red">/</span> projeto_03</p>
+                                <div class="bolinhas" aria-hidden="true"><div class="bolinha-red"></div><div></div><div></div></div>
+                            </div>
+                            <div class="proj-img img-redburguer" role="img" aria-label="Prévia do site RedBurguer" data-en-aria-label="Preview of the RedBurguer website"></div>
+                        </div>
+                    </div>
+
+                    <div class="proj-texto">
+                        <p class="proj-tipo roboto"><span class="red">03 /</span> <span data-en="WEB DEVELOPMENT">DESENVOLVIMENTO WEB</span></p>
+                        <h3 data-en="RedBurguer">RedBurguer</h3>
+                        <p data-en="Burger delivery website with product, orders, cart, login and registration pages.">Site de delivery de hambúrgueres, com páginas de produtos, pedidos, carrinho, login e cadastro.</p>
+                        <ul class="proj-tech roboto" aria-label="Tecnologias do projeto" data-en-aria-label="Project technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                        <div class="proj-botoes">
+                            <button class="proj-botao botao-red abrir-proj" type="button" value="img-redburguer" aria-haspopup="dialog"><span data-en="VIEW PREVIEW">VER PRÉVIA</span> <span class="proj-seta" aria-hidden="true"></span></button>
+                            <a class="proj-botao" href="https://github.com/22501924-eng/Redburguer" target="_blank" rel="noopener noreferrer"><span class="proj-github" aria-hidden="true"></span> <span data-en="CODE">CÓDIGO</span></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <a id="mais-projetos" href="https://github.com/22501924-eng" target="_blank" rel="noopener noreferrer"><span data-en="MY GITHUB REPOSITORIES">MEUS REPOSITÓRIOS NO GITHUB</span> <span class="proj-seta" aria-hidden="true"></span></a>
         </section>
+
+
 
 
 
 
 
         <section id="contato">
+            <div id="texto-contato">
+                <p class="roboto">04 / <span class="red" data-en="CONTACT">CONTATO</span></p>
+                <h2><span data-en="LET&#x27;S">VAMOS</span> <br><span class="red" data-en="TALK_">CONVERSAR_</span></h2>
+                <p id="descricao-contato" data-en="Have an idea, a project or want to exchange experiences? Leave a message or contact me using the links below.">Tem uma ideia, um projeto ou quer trocar uma experiência? Deixe sua mensagem ou fale comigo pelos links abaixo.</p>
+
+                <div id="links-contato">
+                    <a href="mailto:edsonaugusto238@gmail.com">
+                        <span class="ico-contato email-link" aria-hidden="true"></span>
+                        <span><small data-en="EMAIL">E-MAIL</small>edsonaugusto238@gmail.com</span>
+                        <span class="proj-seta" aria-hidden="true"></span>
+                    </a>
+
+                    <a href="https://github.com/22501924-eng" target="_blank" rel="noopener noreferrer">
+                        <span class="ico-contato proj-github" aria-hidden="true"></span>
+                        <span><small>GITHUB</small>22501924-eng</span>
+                        <span class="proj-seta" aria-hidden="true"></span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/edson-augusto-01114041a/" target="_blank" rel="noopener noreferrer">
+                        <span class="ico-contato linkedin-link" aria-hidden="true"></span>
+                        <span><small>LINKEDIN</small>Edson Augusto</span>
+                        <span class="proj-seta" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+
             <div class="card-borda">
-                <div class="card-conteudo"></div>
+                <form id="formulario-contato" class="card-corpo" action="mailto:edsonaugusto238@gmail.com" method="get">
+                    <p id="formulario-titulo" class="roboto"><span class="red">//</span> <span data-en="SEND YOUR MESSAGE">MANDE SUA MENSAGEM</span></p>
+
+                    <div id="nome-email">
+                        <div class="campo">
+                            <label for="nome-contato" data-en="NAME">NOME</label>
+                            <input id="nome-contato" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required maxlength="100" data-en-placeholder="Your name">
+                        </div>
+
+                        <div class="campo">
+                            <label for="email-contato" data-en="EMAIL">E-MAIL</label>
+                            <input id="email-contato" name="email" type="email" autocomplete="email" placeholder="seuemail@exemplo.com" required maxlength="180" data-en-placeholder="youremail@example.com">
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone-contato" data-en="PHONE">TELEFONE</label>
+                        <input id="telefone-contato" name="telefone" type="tel" autocomplete="tel" inputmode="numeric" placeholder="(31) 99999-9999" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" title="Digite o telefone com DDD: (31) 99999-9999" required maxlength="15" data-en-placeholder="(31) 99999-9999" data-en-title="Enter your phone number with area code: (31) 99999-9999">
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto-contato" data-en="SUBJECT">ASSUNTO</label>
+                        <input id="assunto-contato" name="subject" type="text" placeholder="Sobre o que vamos conversar?" required maxlength="120" data-en-placeholder="What would you like to talk about?">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem-contato" data-en="MESSAGE">MENSAGEM</label>
+                        <textarea id="mensagem-contato" name="body" rows="5" placeholder="Conte um pouco da sua ideia..." required maxlength="1500" data-en-placeholder="Tell me a little about your idea..."></textarea>
+                    </div>
+
+                    <button id="enviar-contato" type="submit"><span data-en="PREPARE EMAIL">PREPARAR E-MAIL</span> <span class="proj-seta" aria-hidden="true"></span></button>
+                    <p id="aviso-contato" data-en="Your email app will open with the message ready for you to send.">Seu aplicativo de e-mail abre com a mensagem pronta para você enviar.</p>
+                    <p id="retorno-contato" role="status" data-pt-erro="Preencha os campos com seu nome, telefone, assunto e mensagem." data-en-erro="Fill in your name, phone number, subject and message." data-pt-enviado="Continue no seu aplicativo de e-mail para enviar. Se ele não abrir, use o endereço de e-mail ao lado." data-en-enviado="Continue in your email app to send the message. If it doesn&#x27;t open, use the email address shown."></p>
+                </form>
             </div>
         </section>
     </main>
 
 
-    
-    
+
+
+
+
+
+    <dialog id="previa-projeto" aria-labelledby="titulo-previa">
+        <div id="previa-cima">
+            <h3 id="titulo-previa"></h3>
+            <button id="fechar-previa" type="button" aria-label="Fechar prévia" data-en-aria-label="Close preview" data-en="CLOSE ×">FECHAR ×</button>
+        </div>
+        <div id="imagem-previa" class="proj-img" role="img"></div>
+        <p data-en="Project preview.">Prévia do projeto.</p>
+    </dialog>
+
+
+
+
+
+
+
+
 
     <footer>
-        
+        <div id="conteudo-rodape">
+            <a href="#inicio" id="logo-rodape" aria-label="Edson Augusto — voltar ao início" data-en-aria-label="Edson Augusto — back to home"></a>
+            <p>Edson Augusto <span class="red">/</span> <span data-en="Developer in training.">Desenvolvedor em formação.</span></p>
+            <a id="email-rodape" href="mailto:edsonaugusto238@gmail.com">edsonaugusto238@gmail.com</a>
+            <a href="#inicio" id="voltar-inicio"><span data-en="BACK TO TOP">VOLTAR AO INÍCIO</span> <span class="proj-seta" aria-hidden="true"></span></a>
+        </div>
     </footer>
 
 
